@@ -12,11 +12,20 @@
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             color: #333333; /* Dark gray text color */
-            display: flex; /* Flexbox to center content */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            height: 100vh; /* Full viewport height */
             margin: 0; /* Remove default margin */
+        }
+
+        /* Additional styles for the navigation */
+        nav {
+            margin: 20px; /* Margin for navigation */
+            text-align: center; /* Center navigation links */
+        }
+
+        nav a {
+            margin: 0 15px; /* Spacing between links */
+            color: #ADD8E6; /* Light blue color for links */
+            text-decoration: none; /* Remove underline */
+            font-size: 18px; /* Font size for navigation */
         }
 
         /* Style for the button */
@@ -37,12 +46,31 @@
         .custom-button:hover {
             background-color: rgba(204, 0, 0, 0.8); /* Darker red on hover */
         }
+
+        /* Centering the button */
+        .button-container {
+            display: flex; /* Use flexbox to center button */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 80vh; /* Space above the button */
+        }
     </style>
 </head>
 <body>
 
-    <!-- Button linking to the Discord invite -->
-    <a href="https://discord.gg/eZgvnsK9A4" class="custom-button" target="_blank" rel="noopener noreferrer">Join Splitz RP</a>
+    <!-- Navigation bar with links -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="splitz.html">Splitz Discord</a>
+        <a href="test.html">Test Page</a>
+    </nav>
+
+    <!-- Button container to center the button vertically -->
+    <div class="button-container">
+        <!-- Button linking to the Discord invite -->
+        <a href="https://discord.gg/eZgvnsK9A4" class="custom-button" target="_blank" rel="noopener noreferrer">Join Splitz RP</a>
+    </div>
 
 </body>
 </html>
