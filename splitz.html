@@ -13,16 +13,19 @@
             background-repeat: no-repeat; /* Do not repeat the image */
             color: #333333; /* Dark gray text color */
             margin: 0; /* Remove default margin */
+            height: 100vh; /* Full viewport height */
         }
 
         /* Navigation bar styling */
         nav {
-            margin: 20px; /* Margin for navigation */
-            text-align: center; /* Center navigation links */
+            position: absolute; /* Positioning to top left */
+            top: 20px; /* Distance from the top */
+            left: 20px; /* Distance from the left */
+            margin: 0; /* Remove default margin */
         }
 
         nav a {
-            margin: 0 15px; /* Spacing between links */
+            margin-right: 15px; /* Spacing between links */
             color: #ADD8E6; /* Light blue color for links */
             text-decoration: none; /* Remove underline */
             font-size: 18px; /* Font size for navigation */
@@ -52,13 +55,13 @@
             display: flex; /* Use flexbox to center button */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            height: 80vh; /* Space above the button */
+            height: calc(100vh - 80px); /* Space above the button */
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation bar with links -->
+    <!-- Navigation bar with links positioned at the top left -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
