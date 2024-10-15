@@ -28,13 +28,19 @@
             text-decoration: none; /* Remove underline */
             display: inline-block; /* Make the button inline */
             font-size: 16px; /* Increase font size */
-            margin: 10px 2px; /* Add some margin */
+            margin: 10px; /* Add margin */
             cursor: pointer; /* Add a pointer cursor on hover */
             border-radius: 12px; /* Rounded corners */
         }
 
         .custom-button:hover {
             background-color: rgba(204, 0, 0, 0.8); /* Darker red on hover */
+        }
+
+        /* Additional styling for button container to align buttons */
+        .button-container {
+            display: flex; /* Use flexbox to align buttons */
+            gap: 10px; /* Space between buttons */
         }
     </style>
 </head>
@@ -52,11 +58,14 @@
         I'm learning how to code better, mostly in Lua, HTML, and batch files.
     </p>
 
-    <!-- First button styled to look like a button, opens in a new tab with security attributes -->
-    <a href="https://www.youtube.com/watch?v=zd8DSGoAQrM&ab_channel=RXIndoMusik" class="custom-button" target="_blank" rel="noopener noreferrer">My Favourite Juice WRLD Song!</a>
-
-    <!-- Second button styled to look like a button, opens in a new tab with security attributes -->
-    <a href="https://www.youtube.com/watch?v=BnrsMxEGmxc" class="custom-button" target="_blank" rel="noopener noreferrer">Visit Example!</a>
+    <!-- Button container to align buttons next to each other -->
+    <div class="button-container">
+        <!-- First button styled to look like a button, opens in a new tab with security attributes -->
+        <a href="https://www.youtube.com/watch?v=zd8DSGoAQrM&ab_channel=RXIndoMusik" class="custom-button" target="_blank" rel="noopener noreferrer">My Favourite Juice WRLD Song!</a>
+        
+        <!-- Second button styled to look like a button, opens in a new tab with security attributes -->
+        <a href="https://www.youtube.com/watch?v=BnrsMxEGmxc" class="custom-button" target="_blank" rel="noopener noreferrer">Visit Example!</a>
+    </div>
 
 </body>
 </html>
