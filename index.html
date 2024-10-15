@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,28 +14,27 @@
             color: #333333; /* Light black (dark gray) color for text */
         }
 
-        /* Change color of headings and paragraphs to light blue */
         h1, h2, p {
             color: #ADD8E6; /* Light blue color */
         }
 
         /* Style for the link that looks like a button */
         .custom-button {
-            background-color: rgba(255, 102, 102, 0.8); /* Light red background with some transparency */
-            border: none; /* Remove borders */
-            color: white; /* White text */
-            padding: 15px 32px; /* Add some padding */
-            text-align: center; /* Center text */
-            text-decoration: none; /* Remove underline */
-            display: inline-block; /* Make the button inline */
-            font-size: 16px; /* Increase font size */
-            margin: 10px; /* Add margin */
-            cursor: pointer; /* Add a pointer cursor on hover */
-            border-radius: 12px; /* Rounded corners */
+            background-color: rgba(255, 102, 102, 0.8);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 12px;
         }
 
         .custom-button:hover {
-            background-color: rgba(204, 0, 0, 0.8); /* Darker red on hover */
+            background-color: rgba(204, 0, 0, 0.8);
         }
 
         /* Additional styling for button container to align buttons */
@@ -42,9 +42,27 @@
             display: flex; /* Use flexbox to align buttons */
             gap: 10px; /* Space between buttons */
         }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: #ADD8E6;
+            text-decoration: none;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="test.html">Test Page</a>
+    </nav>
 
     <h1>Hey, I'm Sharky!</h1>
 
@@ -60,11 +78,11 @@
 
     <!-- Button container to align buttons next to each other -->
     <div class="button-container">
-        <!-- First button styled to look like a button, opens in a new tab with security attributes -->
         <a href="https://www.youtube.com/watch?v=zd8DSGoAQrM&ab_channel=RXIndoMusik" class="custom-button" target="_blank" rel="noopener noreferrer">My Favourite Unreleased Juice WRLD Song!</a>
-        
-        <!-- Second button styled to look like a button, opens in a new tab with security attributes -->
         <a href="https://www.youtube.com/watch?v=BnrsMxEGmxc" class="custom-button" target="_blank" rel="noopener noreferrer">My Favourite Released Juice WRLD Song!</a>
+        
+        <!-- Third button linking to test.html -->
+        <a href="test.html" class="custom-button">Go to Test Page!</a>
     </div>
 
 </body>
